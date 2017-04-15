@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>CompanyManagement</display-name>
+  <welcome-file-list>
+ 
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <servlet>
+    <description></description>
+    <display-name>ProductManagement</display-name>
+    <servlet-name>ProductManagement</servlet-name>
+    <servlet-class>com.ProductManagement</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductManagement</servlet-name>
+    <url-pattern>/ProductManagement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ProductManagementController</display-name>
+    <servlet-name>ProductManagementController</servlet-name>
+    <servlet-class>com.ProductManagementController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductManagementController</servlet-name>
+    <url-pattern>/ProductManagementController</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>UserManagementServlet</display-name>
+    <servlet-name>UserManagementServlet</servlet-name>
+    <servlet-class>com.UserManagementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserManagementServlet</servlet-name>
+    <url-pattern>/UserManagementServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>User</display-name>
+    <servlet-name>User</servlet-name>
+    <servlet-class>com.User</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>User</servlet-name>
+    <url-pattern>/User</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UserManagementController</display-name>
+    <servlet-name>UserManagementController</servlet-name>
+    <servlet-class>com.UserManagementController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserManagementController</servlet-name>
+    <url-pattern>/UserManagementController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BillManagementController</display-name>
+    <servlet-name>BillManagementController</servlet-name>
+    <servlet-class>com.BillManagementController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BillManagementController</servlet-name>
+    <url-pattern>/BillManagementController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>WorkFlowController</display-name>
+    <servlet-name>WorkFlowController</servlet-name>
+    <servlet-class>com.WorkFlowController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WorkFlowController</servlet-name>
+    <url-pattern>/WorkFlowController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Billmanager</display-name>
+    <servlet-name>Billmanager</servlet-name>
+    <servlet-class>com.Billmanager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Billmanager</servlet-name>
+    <url-pattern>/Billmanager</url-pattern>
+  </servlet-mapping>
+</web-app>

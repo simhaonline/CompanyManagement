@@ -1,0 +1,74 @@
+select * from GROUPE_EMPLOYEE
+select * from groupe_workflow;
+
+select * from  GroupE_Product;
+
+select * from GROUPE_REPRESENTATIVE 
+select * from  GroupE_Store
+ALTER TABLE GroupE_Store DROP CONSTRAINT primary key;
+ select * from GroupE_Product
+ 
+ ALTER TABLE GroupE_Store DROP PRIMARY KEy
+ drop table GroupE_Store cascade constraints;
+ insert into GroupE_Store values('S1','chennai','south','E111')
+ 
+create table GroupE_Store(
+StoreId varchar(10) primary key,
+StoreName varchar(10) not null,
+Region varchar(10) not null,
+ManagerId varchar(10) 
+);
+
+ create table GroupE_Store(
+StoreId varchar(10) ,
+StoreName varchar(10) not null,
+Region varchar(10) not null,
+ManagerId varchar(10) references GROUPE_EMPLOYEE(empid)
+);
+select * from groupe_store
+insert into groupe_store values('S5','Bangaluru','South','E128');
+insert into groupe_store values('S6','Trivandrum','South','E114');
+insert into groupe_store values('S2','Delhi','North','E110');
+insert into groupe_store values('S3','Kolkata','North','E125');
+insert into groupe_store values('S4','Chennai','South','E135');
+delete from groupe_store where storename='Kolkata'
+update groupe_store set managerid='0' where storename='Chennai'
+delete from groupe_Employee where empid='E126';
+delete from groupe_Employee where empid='E115';
+delete from groupe_Employee where empid='E130';
+delete from groupe_Employee where empid='E134';
+delete from groupe_Employee where empid='E132';
+delete from groupe_Employee where empid='E133';
+delete from groupe_Employee where empid='E138';
+delete from groupe_Employee where empid='E140';
+
+select * from GROUPE_EMPLOYEE
+
+select * from GROUPE_EMPLOYEE where empid='E202'
+
+update GROUPE_EMPLOYEE set gender='male' where empid='E164'
+
+delete from GROUPE_EMPLOYEE where empid='E116';
+
+delete from GROUPE_EMPLOYEE where empid='E201';
+
+delete from GROUPE_EMPLOYEE where empid='E148';
+
+delete from GROUPE_EMPLOYEE where empid='E107';
+delete from GROUPE_EMPLOYEE where empid='E149';
+delete from GROUPE_EMPLOYEE where empid='E204';
+
+delete from GROUPE_EMPLOYEE where empid='E105';
+delete from GROUPE_EMPLOYEE where empid='E106';
+
+delete from GROUPE_EMPLOYEE where empid='E145';
+
+delete from GROUPE_EMPLOYEE where empid='E146';
+
+delete from GROUPE_EMPLOYEE where empid='E161';
+delete from GROUPE_EMPLOYEE where empid='E162';
+delete from GROUPE_EMPLOYEE where empid='E113';
+delete from GROUPE_EMPLOYEE where empid='E147';
+delete from GROUPE_EMPLOYEE where empid='E203';
+delete from GROUPE_EMPLOYEE where empid='E165';
+
